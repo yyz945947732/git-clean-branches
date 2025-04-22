@@ -39,7 +39,7 @@ npx clean-branches [options]
 -v --version           Print git-clean-branches version number
 -b --base <branch>     Specify base branch (default: master)
 -p --dry-run           Preview branches to delete without deleting
--e --exclude <branch>  Exclude branch from deletion (can be repeated)
+-e --exclude <branch>  Exclude branch from deletion (supports glob patterns, can be repeated)
 ```
 
 ### Examples
@@ -53,6 +53,9 @@ npx clean-branches --dry-run
 
 # Clean up branches merged into 'master' excluding 'staging'
 npx clean-branches --exclude 'staging'
+
+# Clean up branches merged into 'master' excluding 'feature/*'
+npx clean-branches --exclude 'feature/*'
 ```
 
 ## LICENSE

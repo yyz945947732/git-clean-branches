@@ -40,6 +40,7 @@ npx clean-branches [options]
 -b --base <branch>     Specify base branch (default: master)
 -p --dry-run           Preview branches to delete without deleting
 -e --exclude <branch>  Exclude branch from deletion (supports glob patterns, can be repeated)
+-f --force             Force delete branches (use -D instead of -d)
 ```
 
 ### Examples
@@ -56,6 +57,9 @@ npx clean-branches --exclude 'staging'
 
 # Clean up branches merged into 'master' excluding 'feature/*'
 npx clean-branches --exclude 'feature/*'
+
+# Force delete branches that have been merged into 'master'
+npx clean-branches --force
 ```
 
 ## LICENSE

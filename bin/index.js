@@ -16,12 +16,13 @@ const aliases = {
   b: 'base',
   p: 'dry-run',
   e: 'exclude',
+  f: 'force',
 };
 
 const parseCliArguments = (args) => {
   const options = parseArgs(args, {
     alias: aliases,
-    boolean: ['help', 'version', 'dry-run'],
+    boolean: ['help', 'version', 'dry-run', 'force'],
     string: ['base', 'exclude'],
     array: ['exclude'],
   });

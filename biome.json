@@ -25,6 +25,7 @@
     "rules": {
       "recommended": true,
       "complexity": {
+        "noForEach": "off",
         "noExtraBooleanCast": "error",
         "noMultipleSpacesInRegularExpressionLiterals": "error",
         "noStaticOnlyClass": "error",

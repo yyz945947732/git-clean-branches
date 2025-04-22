@@ -35,5 +35,11 @@
   "devDependencies": {
     "@biomejs/biome": "^1.1.2",
     "@types/fs-extra": "^11.0.1"
-  }
+  },
+  "keywords": [
+    "git clean branches",
+    "git clean",
+    "git delete",
+    "git"
+  ]
 }

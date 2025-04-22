@@ -23,7 +23,7 @@ const parseCliArguments = (args) => {
   const options = parseArgs(args, {
     alias: aliases,
     boolean: ['help', 'version', 'dry-run', 'force'],
-    string: ['base', 'exclude'],
+    string: ['base'],
     array: ['exclude'],
   });
   return options;

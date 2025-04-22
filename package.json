@@ -1,6 +1,6 @@
 {
   "name": "git-clean-branches",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A CLI tool to delete local Git branches that have already been merged into the base branch.",
   "homepage": "https://github.com/yyz945947732/git-clean-branches",
   "scripts": {

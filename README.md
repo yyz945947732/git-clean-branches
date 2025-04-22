@@ -49,14 +49,17 @@ npx clean-branches [options]
 # Clean up branches already merged into the default 'master' branch
 npx clean-branches
 
-# Preview the branches that have been merged into the default 'master' branch
-npx clean-branches --dry-run
+# Clean up branches already merged into the 'main' branch
+npx clean-branches --base 'main'
 
 # Clean up branches merged into 'master' excluding 'staging'
 npx clean-branches --exclude 'staging'
 
 # Clean up branches merged into 'master' excluding 'feature/*'
 npx clean-branches --exclude 'feature/*'
+
+# Preview the branches that have been merged into the default 'master' branch
+npx clean-branches --dry-run
 
 # Force delete branches that have been merged into 'master'
 npx clean-branches --force

@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      chalk:
-        specifier: ^5.3.0
-        version: 5.4.1
       fs-extra:
         specifier: ^11.1.1
         version: 11.3.0
